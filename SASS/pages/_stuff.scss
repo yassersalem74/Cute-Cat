@@ -1,0 +1,45 @@
+@use "./SASS/variables/colors" as *;
+@use "./SASS/mixins/mixins" as *;
+
+/* start stuff */
+
+
+.stuff{
+   .description{
+    max-width: 500px;
+    background-color: $red-color;
+    border-radius: 5px 10px 20px 50px;
+   } 
+   .cats{
+    border-radius: 50%;
+   //  border: 7px solid $red-color;
+}
+}
+@media screen and (max-width: 992px) {
+   .cats {
+      transform: translateX(36%);
+
+   }
+}
+@media screen and (max-width: 768px) {
+   .cats {
+      transform: translateX(14%);
+
+   }
+}
+@media screen and (max-width: 518px) {
+   .cats {
+      transform: translateX(11%);
+      // transform: none;
+
+   }
+}
+@media screen and (max-width: 376px) {
+   .cats {
+      // transform: translateX(5%);
+      transform: none;
+
+   }
+}
+// transform: translateX(36%);
+/* end stuff */

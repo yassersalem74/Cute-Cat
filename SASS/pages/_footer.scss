@@ -1,0 +1,35 @@
+@use "./SASS/variables/colors" as *;
+@use "./SASS/mixins/mixins" as *;
+
+/* start footer */
+
+    .footer{
+        background-color: $dark-blue;
+        .copyright >span{
+            color: $yellow-color;
+        }
+        .copyright div span{
+             color: $yellow-color;
+         }
+         .contact{
+            ul svg{
+                width: 20px;
+                height: 20px;
+            }
+         }
+         .facebook{
+            background-color: #1877f2;
+         }
+         .twitter{
+            background-color: #1da1f2;
+         }
+         .linkedin{
+            background-color: #0077b5;
+         }
+         .whatsapp{
+            background-color: #128c7e;
+         }
+    }
+
+    
+/* end footer */

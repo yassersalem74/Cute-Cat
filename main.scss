@@ -1,0 +1,42 @@
+//import global rules
+@use "./SASS/layout/global-rules" as *;
+
+//import colors
+@use "./SASS/variables/colors" as *;
+
+//import pages *sections*
+@use "./SASS/pages/navbar" as *;
+@use "./SASS/pages/landing" as *;
+@use "./SASS/pages/features" as *;
+@use "./SASS/pages/gallery" as *;
+@use "./SASS/pages/stuff" as *;
+@use "./SASS/pages/our-team" as *;
+@use "./SASS/pages/footer" as *;
+
+//import mixins
+@use "./SASS/mixins/mixins" as *;
+
+///////////////////////////////////////////////////////////////////////
+
+body{
+    background-color: $main-color;
+    height: 1000px
+}
+
+.main-btn{
+    @include main-btn;
+    &:hover{
+        background-color: $white-color;
+        color: $red-color;
+    }
+}
+
+.sec-btn{
+    @include main-btn;
+    width: 150px;
+    &:hover{
+        background-color: $white-color;
+        color: $red-color;
+    }
+}
+

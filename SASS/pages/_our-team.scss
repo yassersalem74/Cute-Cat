@@ -1,0 +1,27 @@
+@use "./SASS/variables/colors" as *;
+@use "./SASS/mixins/mixins" as *;
+
+/* start team */
+
+.team{
+    // background-color: $red-color;
+    h2{
+        color: $dark-blue;
+    }
+    .box{
+        border-radius: 7%;
+        border: none;
+        h4{
+            background-color: $beige-color;
+            color: $dark-blue;
+        }
+        img{
+            height: 216px;
+            width: 80%;
+            border-radius: 7%;
+        }
+    }
+}
+
+/* end team */
+

@@ -1,0 +1,54 @@
+@use "./SASS/variables/colors" as *;
+@use "./SASS/mixins/mixins" as *;
+
+/* start gallery */
+
+.gallery{
+    background-color: $main-color;
+    .txt-color{
+        color: $dark-blue ;
+    }
+    .cat-icon{
+        font-size: 60px;
+        color: $yellow-color;
+    }
+    ul{
+        .active{
+            background-color: $dark-blue;
+            color: $yellow-color;
+        }
+        .notactive{
+            color: $beige-color;
+
+        }
+        li{
+            padding: 0.5rem 0.5rem;
+            cursor: pointer;
+            &:not(.active):hover{
+                //  color: $dark-blue;
+            }
+            &:hover , &:active{
+                background-color: $dark-blue;
+                color: $yellow-color;
+            }
+        }
+    }
+    .cat-pics{
+        border-radius: 15%;
+        width: 80%;
+        height: 180px;
+    }
+    .box{
+        // padding: 5px;
+        overflow: hidden;
+        position: relative; 
+        border: none;
+    }
+     
+}
+
+
+  .filterDiv {
+    display: none;
+  }  
+/* end gallery */
